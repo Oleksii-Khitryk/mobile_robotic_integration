@@ -1,0 +1,481 @@
+/*Common settings*/
+a { 
+  transition: 0.3s; 
+}
+
+ul li { 
+  text-decoration: none; 
+  list-style: none;
+}
+
+html { 
+  font: 14px "MuseoSans500";
+  /* background: green; */
+}
+
+* { 
+  line-height: 1; 
+}
+/*End common settings*/
+
+/*HEDER*/
+.header {
+  height: 100vh;  /*1062px/100vh */
+  line-height: 90vh;
+  width: 100%;    /*1920px */
+  background: url("../img/header_bg.png") no-repeat center;  
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/*Top Menu*/
+ul.topnav {
+  list-style-type: none;
+  overflow: hidden;
+  text-align: right;
+  margin: 0 7% 0 0;
+  padding: 0;
+}
+
+ul.topnav li { 
+  display: inline-block; 
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 2rem;
+  padding: 25px 15px 5px 15px;
+}
+
+ul.topnav li.icon { 
+  display:none; 
+}
+
+ul.topnav li.icon a { 
+  font-size: 1.5em; 
+}
+
+ul.topnav li a:hover { 
+  color:#1a1a1a; 
+}
+/*End top menu*/
+
+.vertical_align {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+}
+
+.heder_text {
+  transition: 0.4s;
+  padding: 0 10px;
+}
+
+.heder_first_title {
+  font: 3.7rem "MuseoSans300";
+  color: #be8181;
+  text-transform: uppercase;
+}
+
+.heder_second_title {
+  font: 2.8rem "MuseoSans700";
+  color: #fff;
+  text-transform: uppercase;
+  margin: 40px 0 30px 0;
+}
+
+.heder_text p {
+  font: 1.2rem "MuseoSans300";
+  color: #fff;
+}
+
+.learn_more_button {
+  font-size: 1.2rem;
+  color: #fefefe;
+  background: #1d1d1d;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 40px;
+  margin: 25px 0;
+}
+/*END HEDER*/
+
+/*Section*/
+.section {
+  background: #1a1a1a;
+  padding: 2.5rem 0 2.1rem 0;
+  text-align: center;
+}
+
+.section p {
+  color: #bababa;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+
+.inquire_button {
+  width: 12rem;/*170px padding: 10px 65px;*/
+  height: 2.5rem;/*35px*/
+  background: #bf1c22;
+  color: #fefefe;
+  border: none;
+  border-radius: 20px;
+}
+/*End section*/
+
+/*MAIN*/
+.main {
+  position: relative;
+  background: #fff;  
+  padding-bottom: 7.1rem;
+}
+
+.top_main_title {
+  padding: 7.1rem 0 4.3rem 0;
+  text-align: center;
+}
+
+.first_main_title {
+  color: #414141;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.first_main_title span { 
+  font-family: "MuseoSans900";
+}
+
+.second_main_title {
+  color: #5b5b5b;
+  font: 1.2rem "MuseoSans700";
+}
+
+.second_main_title span { 
+  text-transform: uppercase; 
+}
+
+article h5 {
+  font: 1.3rem  "MuseoSans700";
+  color: #464646;
+}
+
+.set_text_property {
+  color: #414242;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  padding: 0 5.7rem;
+}
+
+.row_box {
+  margin: 7rem 0;
+} 
+
+.box_block {
+  padding-left: 5.7rem;
+}
+
+.img-property {
+  display: block;
+  margin: 0 auto;
+}
+
+.after_text { display: none; }
+
+.iconsRF {
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.iconsRF li {  
+  display: inline-block; 
+  font: 1.5rem "MuseoSans900";
+  margin: 0;
+  padding: 10px 0.7vw; 
+  opacity: 0.3;
+  vertical-align: middle;
+}
+
+.iconsRF li img { 
+  height: 1.7rem;
+}
+
+.iconsRF li:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+/* Vertical line with pseudo-radio-button */
+.vertical_line {
+  position: absolute;
+  padding: 0; 
+  top: 18.0rem; 
+  left: 50vw;  
+}
+
+.vertical_line::before {
+  content: "";
+  display: block;
+  position: absolute; 
+  width: 1px;
+  height: 61rem; /*850px */
+  background: #b7b7b7;
+  margin: 0 0 0 1.3rem;
+}
+
+.vertical_line li {
+  position: absolute; 
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 2px solid #414242;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.vertical_line :nth-child(2) { 
+  margin-top: 28.9rem; /*397px/43.5vh*/
+}
+
+.vertical_line :nth-child(3) { 
+  margin-top: 60rem;  /*827px/91.5vh*/
+}
+
+.row_monitor:hover ~ .vertical_line :nth-child(1){
+  box-shadow: inset 0 0 0 0.4rem #fff;
+  background: #bf1c22;
+  transition: 0.5s;
+} 
+.row_box:hover ~ .vertical_line :nth-child(2){
+  box-shadow: inset 0 0 0 0.4rem #fff;
+  background: #bf1c22;
+  transition: 0.5s;
+} 
+.row_satelit:hover ~ .vertical_line :nth-child(3){ 
+  box-shadow: inset 0 0 0 0.4rem #fff;
+  background: #bf1c22;
+  transition: 0.5s;
+}
+/*End vertical line with pseudo-radio-button */ 
+/*END MAIN*/
+
+/* Product section */
+.product_section {
+  width: 100%;
+  position: relative;    
+  background: url("../img/rect_bg.png") no-repeat center;  
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 14.2rem;
+  color: #fff;
+  padding: 12rem 0;
+}
+
+.product_section h4 { 
+  font: 2.2rem "MuseoSans900"; 
+}
+
+.product_section h4 span { 
+  font-family: "MuseoSans500"; 
+}
+
+.product_section i { 
+  font-size: 0.8rem; 
+}
+
+.product_section h5 { 
+  font: 1.3rem "MuseoSans700";
+  color: #1a1a1a;
+  margin-top: 5rem; 
+}
+
+.line_product {
+  position: absolute;
+  width: 65%; /*350px*/
+  margin: -20px 0 0 42%;
+  background: #fff;
+  height: 1px;
+  z-index: 20;
+}
+
+.line_product::after {
+  content: "+";
+  padding: 3px 7px;
+  position: absolute;
+  border-radius: 50%;
+  color: #fff;
+  background: #bf1c22; 
+  margin: -10px 0 0 100%;
+}
+.product_section p { 
+  font-size: 0.9rem;   
+  width: 23rem;
+  line-height: 1.7rem;
+}
+/* 
+.rectangular {
+  text-align: center;
+  border: 3px dashed #ba4d53;
+  border-radius: 25px;
+  margin: 0 7rem;
+  padding: 10rem 0; 
+} */
+
+.device { 
+  /* display: none; */
+}
+
+/* .rectangular span { 
+  font: 1.7rem "MuseoSans700"; 
+} */
+
+/* End product section */
+
+/* Team section */
+.team_section { 
+  background: #fff; 
+  padding: 0 0 10rem 0;
+}
+
+.team_section_title { 
+  color: #0f1017;
+  text-align: center;
+  margin: 9rem 0 6rem 0;  
+}
+
+.team_section h2 { 
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem; 
+}
+
+.team_section h2 span { 
+  font-family: "MuseoSans900"; 
+}
+
+.team_section p { 
+  font: 0.9rem "MuseoSans300"; 
+  margin: 0 20%;
+  line-height: 1.5rem;
+}
+
+.john { 
+  height: 200px; 
+  background: url("../img/frame_round.png") no-repeat center,
+              url("../img/John.png") no-repeat center; 
+}
+
+.jason { 
+  height: 200px;    
+  background: url("../img/frame_round_left.png") no-repeat center,
+              url("../img/Jason.png") no-repeat center; 
+}
+
+.row_team { 
+  text-align: center;
+}
+
+.row_team h5 { 
+  font: 1.4rem "MuseoSans500";
+  color: #0f1017;
+}
+
+/* End team section*/
+
+/* Footer */
+.footer {
+  background: #1a1a1a;
+  color: #727272;
+  padding: 8.5rem 0 6.1rem 0;
+}
+
+.footer h5 {
+  font: 1.5rem "MuseoSans700";
+  color: #b7b6b6;
+  text-transform: uppercase;
+}
+.footer a {
+  text-decoration: none;
+  color: #b7b6b6; 
+}
+
+.sosial_icons a {
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.sosial_icons img {
+  width: 3.5rem;
+  /* display: inline-block; */
+  /* float: left; */
+}
+
+.faceb { 
+   background: url("../img/facebook.png") no-repeat center;
+}
+
+.twit {
+   background: url("../img/twitter.png") no-repeat center;
+}
+
+.linked {
+   background: url("../img/linkedin.png") no-repeat center;
+}
+
+.faceb, .twit, .linked {
+  width: 3.2rem;
+  height: 3.1rem;
+  background-size: contain;
+  margin: 0 3px;
+}  
+
+.sosial_icons a:hover {
+  opacity: 1;
+}
+
+.footer_sign_up {
+  border-left: 1px solid #727272;
+  border-right: 1px solid #727272;
+}
+
+[type="text"] {
+  background: #323232;
+  border: none;
+  width: 100%;/*328px*/
+  padding: 0.85rem 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.mail_footer {
+  margin-top: 3.4rem;
+}
+
+.mail_footer span{
+  color: #924547;
+}
+.copy_right_row {
+  margin-top: 4rem;
+}
+/* End footer */
+
+
+
+
+/* 
+http://html5doctor.com/avoiding-common-html5-mistakes/
+
+ /* http://learn.javascript.ru/css-center */
+
+ /* http://rightblog.ru/2757 */
+
+ /* https://css-tricks.com/snippets/html/html5-page-structure/ */
+
+ /* http://html5.by/blog/placeholder/ */
+
+ /* https://zellwk.com/blog/responsive-typography/ */
+
+ 

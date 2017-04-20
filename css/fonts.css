@@ -1,0 +1,19 @@
+@font-face{
+    font-family: "MuseoSans300";
+    src: url(../fonts/museo-sans-cyrl-300/MuseoSansCyrl_0.otf);
+}
+
+@font-face{
+    font-family: "MuseoSans500";
+    src: url(../fonts/museo-sans-cyrl-500/MuseoSansCyrl_1.otf);
+}
+
+@font-face{
+    font-family: "MuseoSans700";
+    src: url(../fonts/museo-sans-cyrl-700/MuseoSansCyrl_2.otf);
+}
+
+@font-face{
+    font-family: "MuseoSans900";
+    src: url(../fonts/museo-sans-cyrl-900/MuseoSansCyrl_3.otf);
+}
