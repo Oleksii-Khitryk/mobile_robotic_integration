@@ -1,4 +1,12 @@
 /*Common settings*/
+html { 
+  font: 14px "MuseoSans500";
+}
+
+* { 
+  line-height: 1; 
+}
+
 a { 
   transition: 0.3s; 
 }
@@ -7,22 +15,13 @@ ul li {
   text-decoration: none; 
   list-style: none;
 }
-
-html { 
-  font: 14px "MuseoSans500";
-  /* background: green; */
-}
-
-* { 
-  line-height: 1; 
-}
 /*End common settings*/
 
 /*HEDER*/
 .header {
-  height: 100vh;  /*1062px/100vh */
+  height: 100vh;  /*1062px/100vh*/
   line-height: 90vh;
-  width: 100%;    /*1920px */
+  width: 100%;    /*1920px*/
   background: url("../img/header_bg.png") no-repeat center;  
   -webkit-background-size: cover;
   background-size: cover;
@@ -56,7 +55,7 @@ ul.topnav li.icon {
 }
 
 ul.topnav li.icon a { 
-  font-size: 1.5em; 
+  font-size: 1.5rem; 
 }
 
 ul.topnav li a:hover { 
@@ -119,8 +118,8 @@ ul.topnav li a:hover {
 }
 
 .inquire_button {
-  width: 12rem;/*170px padding: 10px 65px;*/
-  height: 2.5rem;/*35px*/
+  width: 12rem;
+  height: 2.5rem;
   background: #bf1c22;
   color: #fefefe;
   border: none;
@@ -184,7 +183,9 @@ article h5 {
   margin: 0 auto;
 }
 
-.after_text { display: none; }
+.after_text { 
+  display: none; 
+}
 
 .iconsRF {
   text-align: left;
@@ -223,7 +224,7 @@ article h5 {
   display: block;
   position: absolute; 
   width: 1px;
-  height: 61rem; /*850px */
+  height: 61rem; 
   background: #b7b7b7;
   margin: 0 0 0 1.3rem;
 }
@@ -238,29 +239,21 @@ article h5 {
 }
 
 .vertical_line :nth-child(2) { 
-  margin-top: 28.9rem; /*397px/43.5vh*/
+  margin-top: 28.9rem; 
 }
 
 .vertical_line :nth-child(3) { 
-  margin-top: 60rem;  /*827px/91.5vh*/
+  margin-top: 60rem;  
 }
 
-.row_monitor:hover ~ .vertical_line :nth-child(1){
-  box-shadow: inset 0 0 0 0.4rem #fff;
-  background: #bf1c22;
-  transition: 0.5s;
-} 
-.row_box:hover ~ .vertical_line :nth-child(2){
-  box-shadow: inset 0 0 0 0.4rem #fff;
-  background: #bf1c22;
-  transition: 0.5s;
-} 
-.row_satelit:hover ~ .vertical_line :nth-child(3){ 
+.row_monitor:hover ~ .vertical_line :nth-child(1),
+.row_box:hover ~ .vertical_line :nth-child(2),
+.row_satelit:hover ~ .vertical_line :nth-child(3){
   box-shadow: inset 0 0 0 0.4rem #fff;
   background: #bf1c22;
   transition: 0.5s;
 }
-/*End vertical line with pseudo-radio-button */ 
+/*End vertical line with pseudo-radio-button*/ 
 /*END MAIN*/
 
 /* Product section */
@@ -295,7 +288,7 @@ article h5 {
 
 .line_product {
   position: absolute;
-  width: 65%; /*350px*/
+  width: 65%; 
   margin: -20px 0 0 42%;
   background: #fff;
   height: 1px;
@@ -311,28 +304,29 @@ article h5 {
   background: #bf1c22; 
   margin: -10px 0 0 100%;
 }
+
 .product_section p { 
   font-size: 0.9rem;   
   width: 23rem;
   line-height: 1.7rem;
 }
-/* 
-.rectangular {
-  text-align: center;
-  border: 3px dashed #ba4d53;
-  border-radius: 25px;
-  margin: 0 7rem;
-  padding: 10rem 0; 
-} */
 
 .device { 
   /* display: none; */
 }
 
-/* .rectangular span { 
-  font: 1.7rem "MuseoSans700"; 
-} */
+.rectangular {
+  display: none;
+  text-align: center;
+  border: 3px dashed #ba4d53;
+  border-radius: 25px;
+  margin: 0 7rem;
+  padding: 10rem 0; 
+}
 
+.rectangular span { 
+  font: 1.7rem "MuseoSans700"; 
+}
 /* End product section */
 
 /* Team section */
@@ -383,7 +377,6 @@ article h5 {
   font: 1.4rem "MuseoSans500";
   color: #0f1017;
 }
-
 /* End team section*/
 
 /* Footer */
@@ -398,6 +391,7 @@ article h5 {
   color: #b7b6b6;
   text-transform: uppercase;
 }
+
 .footer a {
   text-decoration: none;
   color: #b7b6b6; 
@@ -410,8 +404,6 @@ article h5 {
 
 .sosial_icons img {
   width: 3.5rem;
-  /* display: inline-block; */
-  /* float: left; */
 }
 
 .faceb { 
@@ -445,11 +437,12 @@ article h5 {
 [type="text"] {
   background: #323232;
   border: none;
-  width: 100%;/*328px*/
+  width: 100%;
   padding: 0.85rem 1.1rem;
   border-radius: 5px;
   text-decoration: none;
 }
+
 .mail_footer {
   margin-top: 3.4rem;
 }
@@ -457,25 +450,8 @@ article h5 {
 .mail_footer span{
   color: #924547;
 }
+
 .copy_right_row {
   margin-top: 4rem;
 }
 /* End footer */
-
-
-
-
-/* 
-http://html5doctor.com/avoiding-common-html5-mistakes/
-
- /* http://learn.javascript.ru/css-center */
-
- /* http://rightblog.ru/2757 */
-
- /* https://css-tricks.com/snippets/html/html5-page-structure/ */
-
- /* http://html5.by/blog/placeholder/ */
-
- /* https://zellwk.com/blog/responsive-typography/ */
-
- 
